@@ -48,7 +48,8 @@ dependencies = [
     # NewlineTokenizer registration compatibility, DeepSeek/GLM DSA indexer
     # RoPE fix, trust_remote_code load gate, transformers 5.7.0
     # compatibility, and prior BatchGenerator/cache fixes.
-    "mlx-lm @ git+https://github.com/ml-explore/mlx-lm@ab1806e8f5d6aa035973af194a1b9198ab4754dc",
+    #"mlx-lm @ git+https://github.com/ml-explore/mlx-lm@ab1806e8f5d6aa035973af194a1b9198ab4754dc",
+    "mlx-lm @ git+https://github.com/jonpspri/mlx-lm@7b5fe2f5efbea4366ef99cb4d393714553fe2ed2",  # Granite and Hy3
     # regex for mlx-lm's Gemma 4 tool parser (uses recursive patterns)
     "regex",
     # mlx-embeddings from latest commit (32981fa)
@@ -271,7 +272,7 @@ include = ["omlx*"]
 # (e.g. mlx-audio -> mlx-lm==0.31.1) so the resolver accepts them.
 override-dependencies = [
     "mlx==0.32.0",
-    "mlx-lm @ git+https://github.com/ml-explore/mlx-lm@ab1806e8f5d6aa035973af194a1b9198ab4754dc",
+    "mlx-lm @ git+https://github.com/ml-explore/mlx-lm@7b5fe2f5efbea4366ef99cb4d393714553fe2ed2",
 ]
 
 [tool.black]
